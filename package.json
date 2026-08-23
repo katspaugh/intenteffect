@@ -1,0 +1,15 @@
+{
+  "name": "intenteffect-monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm --filter tasks-example test",
+    "demo:server": "pnpm --filter tasks-example dev:server",
+    "demo:web": "pnpm --filter tasks-example dev:web"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
