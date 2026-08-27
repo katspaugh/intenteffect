@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "test": "pnpm --filter tasks-example test",
+    "test": "pnpm --filter @intenteffect/memory test && pnpm --filter tasks-example test",
     "demo:server": "pnpm --filter tasks-example dev:server",
     "demo:web": "pnpm --filter tasks-example dev:web"
   },
