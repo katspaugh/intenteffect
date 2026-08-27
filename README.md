@@ -62,7 +62,8 @@ Every fallible operation in the framework returns `Result<T, E>`
 |---|---|
 | `@intenteffect/core` | `Result`, `intent()` / `event()` / `projection()` contracts (Zod-validated, type-inferred), wire protocol. Zero server deps. |
 | `@intenteffect/server` | `createIntentEffect()`: `handle()`, `project()`, HTTP + SSE transport, event-visibility hooks, storage SPI (`EventStore`). |
-| `@intenteffect/postgres` | `EventStore` implementation: transactional intent execution, durable event log, idempotency, LISTEN/NOTIFY wake-up. |
+| `@intenteffect/postgres` | `EventStore` implementation: transactional intent execution, durable event log, idempotency, LISTEN/NOTIFY wake-up (multi-consumer). |
+| `@intenteffect/memory` | In-memory `EventStore` for tests: same idempotency and cursor-consistency contract, zero infrastructure. |
 | `@intenteffect/client` | `send()`, shared SSE bus with reconnect + exactly-once event application, projection stores. |
 | `@intenteffect/react` | `IntentEffectProvider`, `useProjection`, `useSend`, `useConnectionStatus`. |
 
